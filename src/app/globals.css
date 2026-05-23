@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #2d5016;
+  --color-forest-light: #5a9744;
+  --color-cream: #f5f0e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-forest-900 antialiased;
+}
+
+@layer components {
+  .rainbow-bar {
+    @apply h-1 w-full bg-rainbow;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-forest-800 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-forest-700 bg-white px-6 py-3 text-sm font-semibold text-forest-800 transition hover:bg-forest-50 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply rounded-2xl border border-forest-100 bg-white p-6 shadow-sm;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-forest-200 bg-white px-4 py-3 text-forest-900 placeholder:text-forest-400 focus:border-forest-500 focus:outline-none focus:ring-2 focus:ring-forest-200;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold text-forest-800 md:text-4xl;
+  }
+}

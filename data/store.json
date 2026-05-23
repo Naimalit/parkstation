@@ -1,0 +1,38 @@
+{
+  "tables": [
+    { "id": 1, "number": 1, "capacity": 2, "active": true },
+    { "id": 2, "number": 2, "capacity": 4, "active": true },
+    { "id": 3, "number": 3, "capacity": 4, "active": true },
+    { "id": 4, "number": 4, "capacity": 6, "active": true },
+    { "id": 5, "number": 5, "capacity": 4, "active": true },
+    { "id": 6, "number": 6, "capacity": 2, "active": true },
+    { "id": 7, "number": 7, "capacity": 6, "active": true },
+    { "id": 8, "number": 8, "capacity": 4, "active": true },
+    { "id": 9, "number": 9, "capacity": 2, "active": true },
+    { "id": 10, "number": 10, "capacity": 4, "active": true }
+  ],
+  "categories": [
+    { "id": "drinks", "name_sq": "DRINKS & MORE", "name_mk": "ПИЈАЛОЦИ & ПОВЕЌЕ", "name_en": "DRINKS & MORE", "sort_order": 1 },
+    { "id": "mixers", "name_sq": "Pijet për cocktail", "name_mk": "Пијалоци за коктел", "name_en": "Cocktail mixers", "sort_order": 2 },
+    { "id": "treats", "name_sq": "TREATS & EATS", "name_mk": "СЛАДКИ & ЗАКUSKI", "name_en": "TREATS & EATS", "sort_order": 3 }
+  ],
+  "menuItems": [
+    { "id": "ice-coffee", "category_id": "drinks", "name_sq": "Ice Coffee", "name_mk": "Ice Coffee", "name_en": "Ice Coffee", "price": 100, "active": true },
+    { "id": "kafe-turke", "category_id": "drinks", "name_sq": "Kafe Turke", "name_mk": "Турско кафе", "name_en": "Turkish Coffee", "price": 50, "active": true },
+    { "id": "caj", "category_id": "drinks", "name_sq": "Çaj", "name_mk": "Чај", "name_en": "Tea", "price": 50, "active": true },
+    { "id": "cocktails", "category_id": "drinks", "name_sq": "Cocktails", "name_mk": "Коктели", "name_en": "Cocktails", "price": 150, "active": true },
+    { "id": "mixer-0", "category_id": "mixers", "name_sq": "Ujë", "name_mk": "Ujë", "name_en": "Ujë", "price": 0, "is_mixer": true, "active": true },
+    { "id": "mixer-1", "category_id": "mixers", "name_sq": "Coca Cola", "name_mk": "Coca Cola", "name_en": "Coca Cola", "price": 0, "is_mixer": true, "active": true },
+    { "id": "mixer-2", "category_id": "mixers", "name_sq": "Golden Eagle", "name_mk": "Golden Eagle", "name_en": "Golden Eagle", "price": 0, "is_mixer": true, "active": true },
+    { "id": "mixer-3", "category_id": "mixers", "name_sq": "Sprite", "name_mk": "Sprite", "name_en": "Sprite", "price": 0, "is_mixer": true, "active": true },
+    { "id": "mixer-4", "category_id": "mixers", "name_sq": "Fanta", "name_mk": "Fanta", "name_en": "Fanta", "price": 0, "is_mixer": true, "active": true },
+    { "id": "mixer-5", "category_id": "mixers", "name_sq": "Schweppes", "name_mk": "Schweppes", "name_en": "Schweppes", "price": 0, "is_mixer": true, "active": true },
+    { "id": "slushie", "category_id": "treats", "name_sq": "Slushie", "name_mk": "Slushie", "name_en": "Slushie", "price": 50, "price_large": 80, "active": true },
+    { "id": "limonade", "category_id": "treats", "name_sq": "Limonadë", "name_mk": "Лимонада", "name_en": "Lemonade", "price": 30, "price_large": 50, "active": true },
+    { "id": "fruta-mali", "category_id": "treats", "name_sq": "Fruta mali", "name_mk": "Шумски плодови", "name_en": "Forest fruits", "price": 30, "price_large": 50, "active": true },
+    { "id": "akullore", "category_id": "treats", "name_sq": "Akullore", "name_mk": "Сладолед", "name_en": "Ice cream", "price": 50, "price_large": 60, "active": true },
+    { "id": "mini-pancakes", "category_id": "treats", "name_sq": "Mini pancakes", "name_mk": "Mini pancakes", "name_en": "Mini pancakes", "price": 70, "price_large": 200, "active": true }
+  ],
+  "tableReservations": [],
+  "venueReservations": []
+}

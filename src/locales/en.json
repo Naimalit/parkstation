@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "reserveTable": "Reserve Table",
+    "reserveVenue": "Reserve Venue",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "tagline": "Café in the heart of Cair Park",
+    "subtitle": "Drinks, treats, and beautiful moments in nature",
+    "viewMenu": "View Menu",
+    "reserveTable": "Reserve a Table",
+    "reserveVenue": "Reserve the Venue",
+    "openHours": "Opening Hours",
+    "everyDay": "Every day",
+    "location": "Location",
+    "parking": "Parking nearby",
+    "callUs": "Call us"
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Enjoy our drinks and treats",
+    "small": "Small",
+    "large": "Large",
+    "mixerNote": "Included in cocktails or as mixers"
+  },
+  "tableQr": {
+    "title": "Table {number}",
+    "scanHint": "Scan for menu & reservation",
+    "viewMenu": "View Menu",
+    "reserveThis": "Reserve This Table"
+  },
+  "reserveTable": {
+    "title": "Reserve a Table",
+    "subtitle": "Fill in the form — we'll call you to confirm",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "guests": "Number of guests",
+    "date": "Date",
+    "time": "Time",
+    "table": "Table",
+    "notes": "Notes (optional)",
+    "submit": "Submit Request",
+    "success": "Request sent! We'll call you to confirm.",
+    "error": "Something went wrong. Please try again or call us.",
+    "selectTable": "Select a table",
+    "rules": "Book 1–2 days ahead · Phone confirmation · Cancel: 071-206-221"
+  },
+  "reserveVenue": {
+    "title": "Reserve the Venue",
+    "subtitle": "For birthdays, meetings, and events — up to 40 guests",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "guests": "Number of guests",
+    "date": "Date",
+    "time": "Time",
+    "eventType": "Event type",
+    "notes": "Notes (optional)",
+    "submit": "Submit Request",
+    "success": "Thank you! We'll contact you by phone for details and pricing.",
+    "error": "Something went wrong. Please try again or call us.",
+    "eventBirthday": "Birthday",
+    "eventMeeting": "Meeting",
+    "eventWork": "Work meeting",
+    "eventOther": "Other",
+    "priceNote": "Price is discussed by phone after your request"
+  },
+  "about": {
+    "title": "About Us",
+    "text": "Park Station @ Park Chair is your café in the heart of Cair Park — a place to refresh among nature, for families, friends, and gatherings. From Turkish coffee and iced coffee to slushies and mini pancakes, we're here every day from 10:00 AM to midnight."
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "hours": "Hours",
+    "location": "Location",
+    "social": "Follow us",
+    "openMap": "Open in Google Maps",
+    "parking": "Parking available nearby"
+  },
+  "footer": {
+    "rights": "© {year} Park Station @ Park Chair"
+  },
+  "common": {
+    "loading": "Loading...",
+    "required": "Required field"
+  }
+}

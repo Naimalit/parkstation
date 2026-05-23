@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Kryefaqja",
+    "menu": "Menu",
+    "reserveTable": "Rezervo Tavolinë",
+    "reserveVenue": "Rezervo Lokalin",
+    "about": "Rreth Nesh",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "tagline": "Kafe në zemër të Parkut të Çairit",
+    "subtitle": "Pije, ëmbëlsira dhe momente të bukura midis natyrës",
+    "viewMenu": "Shiko Menynë",
+    "reserveTable": "Rezervo Tavolinë",
+    "reserveVenue": "Rezervo Lokalin",
+    "openHours": "Orari",
+    "everyDay": "Çdo ditë",
+    "location": "Lokacioni",
+    "parking": "Parking pranë lokacionit",
+    "callUs": "Na telefononi"
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Shijoni pijet dhe ëmbëlsirat tona",
+    "small": "E vogël",
+    "large": "E madhe",
+    "mixerNote": "Përfshihen në cocktail ose si mixer"
+  },
+  "tableQr": {
+    "title": "Tavolina {number}",
+    "scanHint": "Skanoni për menu & rezervim",
+    "viewMenu": "Shiko Menynë",
+    "reserveThis": "Rezervo këtë Tavolinë"
+  },
+  "reserveTable": {
+    "title": "Rezervo Tavolinë",
+    "subtitle": "Plotësoni formularin — do t'ju telefonojmë për konfirmim",
+    "name": "Emri",
+    "phone": "Telefoni",
+    "email": "Email",
+    "guests": "Numri i personave",
+    "date": "Data",
+    "time": "Ora",
+    "table": "Tavolina",
+    "notes": "Shënime (opsionale)",
+    "submit": "Dërgo Kërkesën",
+    "success": "Kërkesa u dërgua! Do t'ju telefonojmë për konfirmim.",
+    "error": "Diçka shkoi keq. Provoni përsëri ose na telefononi.",
+    "selectTable": "Zgjidhni tavolinën",
+    "rules": "Rezervimi 1–2 ditë përpara · Konfirmim me telefon · Anulimi: 071-206-221"
+  },
+  "reserveVenue": {
+    "title": "Rezervo Lokalin",
+    "subtitle": "Për ditëlindje, takime dhe evente — deri 40 persona",
+    "name": "Emri",
+    "phone": "Telefoni",
+    "email": "Email",
+    "guests": "Numri i të ftuarve",
+    "date": "Data",
+    "time": "Ora",
+    "eventType": "Lloji i eventit",
+    "notes": "Shënime (opsionale)",
+    "submit": "Dërgo Kërkesën",
+    "success": "Faleminderit! Do t'ju kontaktojmë telefonikisht për detajet dhe çmimin.",
+    "error": "Diçka shkoi keq. Provoni përsëri ose na telefononi.",
+    "eventBirthday": "Ditëlindje",
+    "eventMeeting": "Takim",
+    "eventWork": "Takim pune",
+    "eventOther": "Tjetër",
+    "priceNote": "Çmimi bisedohet me telefon pas kërkesës"
+  },
+  "about": {
+    "title": "Rreth Nesh",
+    "text": "Park Station @ Park Chair është kafeja juaj në zemër të Parkut të Çairit — një vend për t'u freskuar midis natyrës, për familje, miq dhe takime. Nga kafeja turke dhe ice coffee deri te slushie dhe mini pancakes, gati për t'ju shërbyer çdo ditë nga ora 10:00 deri në mesnatë."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefon",
+    "hours": "Orari",
+    "location": "Lokacioni",
+    "social": "Na ndiqni",
+    "openMap": "Hap në Google Maps",
+    "parking": "Ka parking pranë lokacionit"
+  },
+  "footer": {
+    "rights": "© {year} Park Station @ Park Chair"
+  },
+  "common": {
+    "loading": "Duke u ngarkuar...",
+    "required": "Fushë e detyrueshme"
+  }
+}
