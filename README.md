@@ -22,9 +22,10 @@ Hapni [http://localhost:3000](http://localhost:3000)
 
 ## Admin Panel
 
-- URL: `/admin`
-- Fjalëkalimi default: `parkstation2026`
-- Ndryshoni me `ADMIN_PASSWORD` në `.env.local`
+- **Live URL:** https://parkstation.vercel.app/admin
+- **Lokal:** http://localhost:3000/admin
+- **Fjalëkalimi default:** `parkstation2026`
+- Ndryshoni me `ADMIN_PASSWORD` në Vercel Environment Variables
 
 ## QR Codes
 
