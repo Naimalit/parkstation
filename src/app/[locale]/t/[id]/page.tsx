@@ -21,7 +21,6 @@ export default async function TableQrPage({
 
   return (
     <div className="mx-auto max-w-md px-4 py-16 text-center">
-      <div className="rainbow-bar mb-8 rounded-full" />
       <h1 className="font-display text-3xl font-bold text-forest-800">
         {t(dict, "tableQr.title", { number: table.number })}
       </h1>

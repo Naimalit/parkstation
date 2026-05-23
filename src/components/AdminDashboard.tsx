@@ -106,7 +106,6 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-cream">
       <header className="border-b border-forest-100 bg-white">
-        <div className="rainbow-bar" />
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div>
             <h1 className="font-display text-xl font-bold text-forest-800">Admin Panel</h1>

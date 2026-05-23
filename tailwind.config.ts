@@ -28,9 +28,6 @@ const config: Config = {
         display: ["Georgia", "serif"],
         sans: ["system-ui", "Segoe UI", "sans-serif"],
       },
-      backgroundImage: {
-        rainbow: "linear-gradient(90deg, #E53935, #FB8C00, #FDD835, #43A047, #1E88E5, #8E24AA)",
-      },
     },
   },
   plugins: [],

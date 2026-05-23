@@ -32,7 +32,6 @@ export default function AdminLoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-forest-900 px-4">
       <form onSubmit={handleSubmit} className="card w-full max-w-sm">
-        <div className="rainbow-bar mb-6 rounded-full" />
         <h1 className="text-center font-display text-2xl font-bold text-forest-800">
           Admin Panel
         </h1>

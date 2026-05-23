@@ -27,12 +27,6 @@ export async function GET() {
       text-align: center;
       page-break-inside: avoid;
     }
-    .rainbow {
-      height: 4px;
-      background: linear-gradient(90deg, #E53935, #FB8C00, #FDD835, #43A047, #1E88E5, #8E24AA);
-      border-radius: 2px;
-      margin-bottom: 12px;
-    }
     h1 { text-align: center; font-size: 24px; margin-bottom: 8px; }
     h2 { font-size: 18px; margin: 8px 0; }
     p { font-size: 12px; margin: 4px 0; color: #447834; }
@@ -49,7 +43,6 @@ export async function GET() {
       .map(
         (t) => `
     <div class="card">
-      <div class="rainbow"></div>
       <h2>Tavolina ${t.number}</h2>
       <p>Table ${t.number} · Мasa ${t.number}</p>
       <img src="${baseUrl}/api/admin/qr?table=${t.id}&format=png" alt="QR ${t.number}" />
