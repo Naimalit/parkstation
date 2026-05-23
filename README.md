@@ -32,7 +32,24 @@ Hapni [http://localhost:3000](http://localhost:3000)
 2. Klikoni **Hap & Printo QR Codes**
 3. Printoni dhe vendosni në çdo tavolinë
 
-## Deploy në Vercel
+## Deploy automatik
+
+Çdo ndryshim shkon automatikisht në **GitHub** dhe **Vercel**:
+
+1. **Vercel ↔ GitHub** — i lidhur. Çdo `git push` aktivizon deploy automatik në https://parkstation.vercel.app
+2. **Script i shpejtë** — pas ndryshimeve, ekzekutoni:
+
+```bash
+npm run deploy
+```
+
+Ose me mesazh custom:
+
+```powershell
+.\deploy.ps1 "Pershkrimi i ndryshimit"
+```
+
+## Deploy manual (Vercel CLI)
 
 1. Push në GitHub
 2. Import projektin në [vercel.com](https://vercel.com)

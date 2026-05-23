@@ -36,7 +36,7 @@ export default async function HomePage({
             <Link href={`${base}/menu`} className="btn-primary bg-white text-forest-800 hover:bg-forest-50">
               {dict.home.viewMenu}
             </Link>
-            <Link href={`${base}/rezervo-tavoline`} className="btn-secondary border-white text-white hover:bg-white/10">
+            <Link href={`${base}/rezervo-tavoline`} className="btn-secondary border-white bg-transparent text-white hover:bg-white/20">
               {dict.home.reserveTable}
             </Link>
           </div>
