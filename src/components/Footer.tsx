@@ -14,7 +14,6 @@ export function Footer({ locale, dict }: FooterProps) {
 
   return (
     <footer className="mt-auto border-t border-forest-100 bg-forest-900 text-forest-100">
-      <div className="rainbow-bar" />
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
         <div>
           <p className="font-display text-xl font-bold text-white">

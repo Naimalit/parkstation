@@ -26,8 +26,7 @@ export function Header({ locale, dict }: HeaderProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm">
-      <div className="rainbow-bar" />
+    <header className="sticky top-0 z-50 border-b border-forest-100 bg-cream/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <LogoLink href={base} showSubtitle />
 
