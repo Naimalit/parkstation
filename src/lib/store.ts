@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { list, put } from "@vercel/blob";
 
 export type TableCapacity = 2 | 4 | 6;
 
@@ -70,6 +71,7 @@ export interface Store {
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const STORE_PATH = path.join(DATA_DIR, "store.json");
+const BLOB_PATHNAME = "data/store.json";
 
 export const defaultStore: Store = {
   tables: Array.from({ length: 10 }, (_, i) => ({
@@ -205,7 +207,36 @@ export const defaultStore: Store = {
   venueReservations: [],
 };
 
-async function ensureStore(): Promise<void> {
+function useBlobStorage(): boolean {
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+}
+
+async function readStoreFromBlob(): Promise<Store | null> {
+  if (!useBlobStorage()) return null;
+
+  try {
+    const { blobs } = await list({ prefix: BLOB_PATHNAME, limit: 1 });
+    const blob = blobs.find((item) => item.pathname === BLOB_PATHNAME);
+    if (!blob) return null;
+
+    const response = await fetch(blob.url, { cache: "no-store" });
+    if (!response.ok) return null;
+    return (await response.json()) as Store;
+  } catch {
+    return null;
+  }
+}
+
+async function writeStoreToBlob(store: Store): Promise<void> {
+  await put(BLOB_PATHNAME, JSON.stringify(store, null, 2), {
+    access: "public",
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    contentType: "application/json",
+  });
+}
+
+async function ensureLocalStore(): Promise<void> {
   await fs.mkdir(DATA_DIR, { recursive: true });
   try {
     await fs.access(STORE_PATH);
@@ -214,15 +245,45 @@ async function ensureStore(): Promise<void> {
   }
 }
 
-export async function readStore(): Promise<Store> {
-  await ensureStore();
+async function readStoreFromFile(): Promise<Store> {
+  await ensureLocalStore();
   const raw = await fs.readFile(STORE_PATH, "utf-8");
   return JSON.parse(raw) as Store;
 }
 
-export async function writeStore(store: Store): Promise<void> {
-  await ensureStore();
+async function writeStoreToFile(store: Store): Promise<void> {
+  await ensureLocalStore();
   await fs.writeFile(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
+}
+
+async function getSeedStore(): Promise<Store> {
+  try {
+    return await readStoreFromFile();
+  } catch {
+    return defaultStore;
+  }
+}
+
+export async function readStore(): Promise<Store> {
+  if (useBlobStorage()) {
+    const blobStore = await readStoreFromBlob();
+    if (blobStore) return blobStore;
+
+    const seed = await getSeedStore();
+    await writeStoreToBlob(seed);
+    return seed;
+  }
+
+  return readStoreFromFile();
+}
+
+export async function writeStore(store: Store): Promise<void> {
+  if (useBlobStorage()) {
+    await writeStoreToBlob(store);
+    return;
+  }
+
+  await writeStoreToFile(store);
 }
 
 export function generateId(): string {

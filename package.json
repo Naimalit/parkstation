@@ -10,6 +10,7 @@
     "deploy": "powershell -ExecutionPolicy Bypass -File ./deploy.ps1"
   },
   "dependencies": {
+    "@vercel/blob": "^2.4.0",
     "next": "^15.1.0",
     "qrcode": "^1.5.4",
     "react": "^19.0.0",
